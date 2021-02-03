@@ -1,0 +1,421 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+main {
+ overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+main {
+ margin-top: 70px;
+}
+
+.smaller-font {
+  font-size: 14px;
+}
+
+.orange {
+  background-color: #f72210 !important;
+}
+
+.orange-text {
+  color: #f72210;
+  text-transform: uppercase;
+}
+
+.blue-text {
+  color: #3581f4;
+}
+
+.red-background {
+  background-color: #ff0500;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.white-text {
+  color: white;
+  text-transform: uppercase;
+}
+
+.card-title {
+  text-transform: uppercase;
+  color: gray;
+}
+/* the main margin top doesn't apply to the nav bc --using main vs body */
+/* if had body, everything would go inside of it */
+/* newsweek doesn't use in page links inside its sidepanel */
+#us, #world, #business, #tech, #culture, #newsgeek, #sports, #debate, #experts {
+  padding-top: 70px;
+}
+
+ .offcanvas-collapse {
+   position: fixed;
+   top: 70px; /* Height of navbar */
+   bottom: 0;
+   left: 100%;
+   width: 50%;
+   padding-right: 1rem;
+   padding-left: 1rem;
+   overflow-y: auto;
+   visibility: hidden;
+   background-color: white;
+   transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+ }
+
+ .offcanvas-collapse.open {
+   visibility: visible;
+   top: 0;
+   transform: translateX(-100%);
+ }
+
+.nav-scroller {
+ position: relative;
+ z-index: 2;
+ height: 2.75rem;
+ overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+ display: flex;
+ flex-wrap: nowrap;
+ padding-bottom: 1rem;
+ margin-top: -1px;
+ overflow-x: auto;
+ color: black;
+ text-align: center;
+ white-space: nowrap;
+ -webkit-overflow-scrolling: touch;
+}
+
+.navbar-nav .nav-link {
+ padding-top: .75rem;
+ padding-bottom: .75rem;
+ font-size: .9rem;
+ color: black;
+}
+
+.navbar-nav .nav-link:hover {
+ color: white !important;
+ background-color: black;
+}
+
+.navbar-nav .active {
+ font-weight: 700;
+ color: black;
+ font-size: 1.1rem;
+}
+
+.navbar-nav .red-hover:hover {
+  color: red !important;
+  background-color: white !important;
+}
+
+.trending {
+  font-weight: 700;
+  color: black;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.search-box {
+   display: block;
+   width: 100%;
+   padding: .375rem .75rem;
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 1.5;
+   color: #212529;
+   background-color: #fff;
+   background-clip: padding-box;
+   border: none;
+   outline: none;
+ }
+
+#newsweek-logo {
+  width: 100px;
+  height: 50px;
+}
+
+.subscribe-btn {
+  background-color: yellow;
+  width: 150px;
+  font-weight: 700;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.image-placeholder {
+  height: 300px;
+  padding: 10px;
+  background-color: gray;
+  color: white;
+  position: relative;
+}
+
+.card {
+  margin-top: 10px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.card span {
+ position: absolute;
+ left: 0;
+ bottom: 0;
+ background-color: rgb(243, 243, 243);
+ padding: 5px 12px;
+ text-transform: uppercase;
+}
+
+.span-alt {
+  background-color: black !important;
+  color: white !important;
+  padding: 0px 6px !important;
+  font-size: 14px !important;
+  text-transform: uppercase;
+}
+
+.small-image {
+  background-color: pink;
+  width: 84px;
+  height: 84px;
+}
+
+.image-placeholder-2 {
+  height: 520px;
+  background-color: tan;
+  position: relative;
+}
+
+.image-placeholder-3 {
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  background-color: yellow;
+}
+
+.image-placeholder-4 {
+  height: 100px;
+  width: 100px;
+  background-color: lightblue;
+  margin: 10px;
+}
+
+.image-placeholder-5 {
+  height: 170px;
+  width: 470px;
+  background-color: orange;
+  margin: 10px;
+}
+
+.image-placeholder-circle {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  background-color: red;
+  margin: 10px 15px;
+}
+
+.image-placeholder-circle-2 {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  background-color: red;
+  margin: 0px 30px 10px 0px;
+}
+
+.versus {
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  padding: 2px;
+  font-size: 14px;
+  text-align: center;
+  position: absolute;
+  left: 40%;
+  top: 57%;
+}
+
+#vs-hr {
+  position: relative;
+}
+
+#signup-input {
+  height: 40px;
+}
+
+
+@media (max-width: 400px) {
+  #newsweek-logo {
+    width: 75px;
+    height: 50px;
+  }
+
+  input[type="email"] {
+    width: 160px;
+    height: 50px;
+    padding: 10px;
+    margin-right: 15px;
+  }
+
+  .red-background {
+    padding: 12px;
+  }
+
+  .versus {
+    top: 67%;
+  }
+
+  .small-devices {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .image-placeholder-circle {
+    margin: 0px 5px 0px -10px;
+  }
+
+  .image-placeholder-circle-2 {
+    margin: 0px 10px 10px -10px;
+  }
+
+}
+
+@media (min-width: 992px) {
+  #newsweek-logo {
+    width: 300px;
+    height: 100px;
+  }
+
+  nav {
+    height: 100px;
+    margin: 0 10px;
+  }
+
+  main {
+    padding-top: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+/* Very crude and quick way to get approximate layout */
+
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 350px 1150px 1525px 700px;
+}
+
+  .card-lg-fix {
+    display: flex;
+  }
+
+  .grouping-subscribe {
+    display: flex;
+  }
+
+  .grouping-images {
+    display: flex;
+  }
+
+  .grouping-images-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-placeholder {
+    height: 300px;
+    width: 300px;
+    background-color: gray;
+    color: white;
+    position: relative;
+    margin: 10px;
+  }
+
+  .remove-text {
+    height: 0;
+    overflow: hidden;
+  }
+
+  .in-the-magazine-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .in-the-magazine-divider {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .in-the-magazine-divider .image-placeholder-2 {
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    background-color: tan;
+    position: relative;
+  }
+
+  .editors-pick-body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .editors-pick-divider {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .editors-pick-divider .image-placeholder-2 {
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    background-color: tan;
+    position: relative;
+  }
+
+  .my-turn-container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .my-turn-container .image-placeholder {
+    height: 150px;
+    width: 150px;
+    margin: 10;
+  }
+
+  .my-turn-container .card-body {
+    display: none;
+  }
+
+  .culture-travel-container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .culture-travel-container .image-placeholder-2 {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+  }
+
+  .culture-travel-container .card-body {
+    display: none;
+  }
+
+  .smaller-font {
+    font-size: 20px;
+  }
+
+  footer {
+    font-size: 20px;
+  }
+
+}
