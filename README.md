@@ -1,7 +1,7 @@
 # odin-project-bootstrap
 Odin Project HTML/CSS - Bootstrap exercise
 
-[Odin Project](https://theodinproject.com/courses/html-and-css/lessons/using-bootstrap) 
+[Odin Project](https://web.archive.org/web/20210204232514/https://www.theodinproject.com/courses/html-and-css/lessons/using-bootstrap) 
 <br/>
 [Newsweek](https://www.newsweek.com)
 <br/>
